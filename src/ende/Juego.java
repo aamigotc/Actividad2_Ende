@@ -12,7 +12,7 @@ public class Juego
         Jugador p1 = new Jugador();
         Jugador p2 = new Jugador();
         boolean finDeJuego = false;
-        int Rondasjugadas = 0;    // Numero de rondas jugadas
+        int Rondasjugadas = 0;  
         int exitosJugador1 = p1.exitos;
         int exitosJugador2 = p2.exitos;
         int empates = 0;
@@ -71,7 +71,7 @@ public class Juego
             Rondasjugadas++;
             if((p1.exitos >=3)||(p2.exitos >=3))
             {
-            	finDeJuego=true;
+            	finDeJuego = true;
                 System.out.println("FIN DEL JUEGO!!");
             }
             System.out.println();
@@ -82,12 +82,13 @@ public class Juego
  *
  */
 class Jugador{
-   
-    /**
-     * Escoge piedra, papel o tijera al azar
-     */
+
+    int exitos;
+
     public String opcionAlAzar()
     {
+
+
         String opcion="";
         int c = (int)(Math.random()*3);
 
@@ -112,5 +113,5 @@ class Jugador{
         return(exitos);
     }
     
-    int exitos;      // numero de partidas ganadas
+
 }
