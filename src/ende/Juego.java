@@ -12,7 +12,7 @@ public class Juego
         Jugador p1 = new Jugador();
         Jugador p2 = new Jugador();
         boolean finDeJuego = false;
-        int Rondasjugadas = 0;  
+        int Rondasjugadas = 0;
         int exitosJugador1 = p1.exitos;
         int exitosJugador2 = p2.exitos;
         int empates = 0;
@@ -77,41 +77,4 @@ public class Juego
             System.out.println();
         } while(!finDeJuego);
     }
-}
-/**
- *
- */
-class Jugador{
-
-    int exitos;
-
-    public String opcionAlAzar()
-    {
-
-
-        String opcion="";
-        int c = (int)(Math.random()*3);
-
-        switch(c){
-            case 0:
-            	opcion=("piedra");
-                break;
-            case 1:
-            	opcion=("papel");
-                break;
-            case 2:
-            	opcion=("tijeras");
-        }
-        return opcion;
-    }
-    public void incrementarExitos()
-    {
-        exitos++;
-    }
-    public int getExitos()
-    {
-        return(exitos);
-    }
-    
-
 }
