@@ -63,12 +63,14 @@ public class Juego
             	exitosJugador2 = ++p2.exitos;
                 System.out.println("Jugador 2 GANA");
             }
+            
             if(opcionJugador1==opcionJugador2)
             {
             	empates++;
                 System.out.println("\n\t\t\t Empate \n");
             }
             Rondasjugadas++;
+
             if((p1.exitos >=3)||(p2.exitos >=3))
             {
             	finDeJuego = true;

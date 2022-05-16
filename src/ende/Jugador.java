@@ -9,8 +9,8 @@ class Jugador {
 
     public String opcionAlAzar() {
 
-
         String opcion = "";
+
         int c = (int) (Math.random() * 3);
 
         switch (c) {
