@@ -75,7 +75,7 @@ public class Juego
                 System.out.println("FIN DEL JUEGO!!");
             }
             System.out.println();
-        } while(finDeJuego!=true);
+        } while(!finDeJuego);
     }
 }
 /**
@@ -103,7 +103,7 @@ class Jugador{
         }
         return opcion;
     }
-    public void setExitos()
+    public void incrementarExitos()
     {
         exitos++;
     }
@@ -113,5 +113,4 @@ class Jugador{
     }
     
     int exitos;      // numero de partidas ganadas
-    int winTotal;
 }
